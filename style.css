@@ -12,3 +12,7 @@
     min-width: 20px;
     border: 1px solid black;
 }
+
+.hovered {
+    background-color: black;
+}
