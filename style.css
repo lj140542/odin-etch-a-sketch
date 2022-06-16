@@ -1,0 +1,14 @@
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    min-height: 20px;
+    min-width: 20px;
+    border: 1px solid black;
+}
