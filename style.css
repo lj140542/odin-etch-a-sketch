@@ -1,16 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
 #container {
     display: flex;
     flex-direction: column;
+    width: 800px;
+    height: 800px;
 }
 
 .row {
     display: flex;
+    flex: 1;
 }
 
 .col {
     min-height: 20px;
     min-width: 20px;
     border: 1px solid black;
+    flex: 1;
 }
 
 .hovered {
