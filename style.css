@@ -1,6 +1,12 @@
 body {
     display: flex;
     justify-content: center;
+    gap: 10px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
 }
 
 #container {
@@ -16,8 +22,8 @@ body {
 }
 
 .col {
-    min-height: 20px;
-    min-width: 20px;
+    min-height: 1px;
+    min-width: 1px;
     border: 1px solid black;
     flex: 1;
 }
