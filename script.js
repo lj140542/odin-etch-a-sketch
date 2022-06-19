@@ -23,11 +23,21 @@ function drawGrid() {
 }
 
 function resize() {
-    let input = prompt('Enter the new size (a number between 9 and 250)');
-    nbrOfCol = input;
-    nbrOfRow = input;
-    clearGrid();
-    drawGrid();
+    let input = 0;
+    
+    while (input < 9 || input > 250 || Number.isNaN(parseInt(input)) == true) {
+        input = prompt('Enter the new size (a number between 9 and 250)');
+        if (input == null) {
+            break;
+        }
+    }
+        
+    if (input != null) {
+        nbrOfCol = input;
+        nbrOfRow = input;
+        clearGrid();
+        drawGrid();
+    }
 }
 
 function clearGrid() {
