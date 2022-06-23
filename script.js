@@ -2,8 +2,10 @@ let nbrOfCol = 9;
 let nbrOfRow = 9;
 const container = document.getElementById('container');
 const resizeButton = document.getElementById('resizeButton');
+const refreshButton = document.getElementById('refreshButton');
 
-resizeButton.addEventListener('click', resize)
+resizeButton.addEventListener('click', resize);
+refreshButton.addEventListener('click', refresh);
 drawGrid();
 
 function drawGrid() {
@@ -50,4 +52,11 @@ function clearGrid() {
 
 function hovered() {
     this.classList.add('hovered');
+}
+
+function refresh() {
+    let refreshList = Array.from(document.getElementsByClassName('hovered'));
+    refreshList.forEach(function(element) {
+        element.classList.remove('hovered');
+    });
 }
