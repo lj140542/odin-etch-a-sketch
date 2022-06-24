@@ -1,19 +1,39 @@
-body {
+header {
+   text-align: center; 
+}
+
+main {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 #buttons {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 200px;
+}
+
+button {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    padding: 10px 20px;
+    width: 100%;
 }
 
 #container {
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    height: 800px;
+    display: grid;
+    /* flex-direction: column; */
+    width: 500px;
+    height: 500px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
 .row {
@@ -24,7 +44,7 @@ body {
 .col {
     min-height: 1px;
     min-width: 1px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     flex: 1;
 }
 
